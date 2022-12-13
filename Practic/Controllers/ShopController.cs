@@ -20,58 +20,54 @@ namespace Practic.Controllers
             this.roleManager = roleManager;
             this.signInManager = signInManager;
         }
-        public IActionResult AddUser()
-        {
 
-            return View();
-        }
         [HttpPost]
         public async Task<IActionResult> AddUser(ShopDto Dto)
         {
-            var FindUser = await userManager.Users.Where(x => x.UserName == Dto.Username).FirstOrDefaultAsync();
-            if (FindUser != null)
+            Dto.PhoneNumber = Dto.Username;
+            if (ModelState.IsValid)
             {
-                return View(nameof(eror2));
-            }
-            var User = new User()
-            {
-                Id = Dto.Id,
-                Name = Dto.Name,
-                Email = Dto.Email,
-                NationalCode = Dto.NationalCode,
-                PhoneNumber = Dto.PhoneNumber,
-                UserName = Dto.Username,
-
-            };
-            var status = await userManager.CreateAsync(User,Dto.Password);
-            if (status.Succeeded)
-            {
-                var FindRole = await roleManager.FindByNameAsync("Username");
-                if (FindRole != null)
+                var FindUser = await userManager.Users.Where(x => x.UserName == Dto.Username).FirstOrDefaultAsync();
+                if (FindUser != null)
                 {
-                    var Role = new Role()
-                    {
-                        Name = "Username",
-                        Description = "this is a normal user"
-                    };
-                    await roleManager.CreateAsync(Role);
+                    ModelState.AddModelError("Username", "کاربر تکراری است");
+                    return RedirectToAction("index", "home");
                 }
-            }await userManager.AddToRoleAsync(User,"Username");
+                var User = new User()
+                {
+                    Id = Dto.Id,
+                    Name = Dto.Name,
+                    Email = Dto.Email,
+                    NationalCode = Dto.NationalCode,
+                    PhoneNumber = Dto.PhoneNumber,
+                    UserName = Dto.Username,
+                };
+                var status = await userManager.CreateAsync(User, Dto.Password);
+                if (status.Succeeded)
+                {
+                    var FindRole = await roleManager.FindByNameAsync("NormalUser");
+                    if (FindRole == null)
+                    {
+                        var Role = new Role()
+                        {
+                            Name = "NormalUser",
+                            Description = "this is a normal user"
+                        };
+                        await roleManager.CreateAsync(Role);
+                    }
+                }
+                await userManager.AddToRoleAsync(User, "NormalUser");
 
 
-            return View();
+            }
+            return RedirectToAction("index", "home");
         }
-        public async Task<IActionResult> Login()
-        {
-            return View();
-        }
+       
         [HttpPost]
         public async Task<IActionResult> Login(string Username, string Password)
         {
             var User = await userManager.FindByNameAsync(Username);
-
             if (User != null)
-
             {
                 var Status = await signInManager.PasswordSignInAsync(User, Password, true, true);
                 if (Status.Succeeded)
@@ -79,7 +75,6 @@ namespace Practic.Controllers
                     return RedirectToAction("index", "home");
                 }
                 return View(nameof(eror3));
-
             }
             return RedirectToAction("eroe2");
 
@@ -115,7 +110,8 @@ namespace Practic.Controllers
         {
 
             return View();
-        } public async Task<IActionResult> eror3()
+        }
+        public async Task<IActionResult> eror3()
         {
 
             return View();

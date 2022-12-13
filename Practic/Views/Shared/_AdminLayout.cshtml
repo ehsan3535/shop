@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>داشبورد</title>
+
+    <!-- Custom CSS -->
+    <link href="~/dashboard/assets/css/styles.css" rel="stylesheet">
+
+    <!-- Custom Color Option -->
+    <link href="~/dashboard/assets/css/colors.css" rel="stylesheet">
+    @await RenderSectionAsync("Styles",false)
+</head>
+
+<body class="red-skin rtl">
+
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div id="preloader"><div class="preloader"><span></span><span></span></div></div>
+
+
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <div class="clearfix"></div>
+        @RenderBody()
+    </div>
+</body>
+
+</html>
+
+<script src="~/dashboard/assets/js/jquery.min.js"></script>
+<script src="~/dashboard/assets/js/popper.min.js"></script>
+<script src="~/dashboard/assets/js/bootstrap.min.js"></script>
+<script src="~/dashboard/assets/js/select2.min.js"></script>
+<script src="~/dashboard/assets/js/slick.js"></script>
+<script src="~/dashboard/assets/js/jquery.counterup.min.js"></script>
+<script src="~/dashboard/assets/js/counterup.min.js"></script>
+<script src="~/dashboard/assets/js/custom.js"></script>
+<!-- ============================================================== -->
+<!-- This page plugins -->
+<!-- ============================================================== -->
+<script src="~/dashboard/assets/js/metisMenu.min.js"></script>
+<script>
+    $('#side-menu').metisMenu();
+</script>
+@await RenderSectionAsync("Scripts",false)
