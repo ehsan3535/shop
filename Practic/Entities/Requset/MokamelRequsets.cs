@@ -1,5 +1,5 @@
-﻿using Practic.Entities;
-using Shop.Entities.Product;
+﻿using Shop.Entities.Product;
+using Users.Entities;
 
 namespace Shop.Entities.Requset
 {

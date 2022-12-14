@@ -1,15 +1,14 @@
 ﻿using Users.Entities;
 
-namespace Shop.Entities.Product
+namespace Shop.Models.Products
 {
-    public class ProductComment
+    public class ProductCommentDto
     {
         public Guid Id { get; set; }
         public string Message { get; set; }
         public Guid ProductId { get; set; }
-        public Product Product { get; set; }
+        public ProductDto Product { get; set; }
         public Guid UserId { get; set; }
         public User Users { get; set; }
-
     }
 }

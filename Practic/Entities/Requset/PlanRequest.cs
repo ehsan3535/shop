@@ -1,5 +1,5 @@
-﻿using Practic.Entities;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using Users.Entities;
 
 namespace Shop.Entities.Requset
 {

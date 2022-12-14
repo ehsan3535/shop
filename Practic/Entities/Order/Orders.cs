@@ -1,16 +1,14 @@
-﻿using Practic.Entities;
-using Shop.Entities.Constants;
+﻿using Shop.Entities.Constants;
 using Shop.Entities.Order;
+using Users.Entities;
 
-namespace Shop.Entities.Admin
+public class Orders
 {
-    public class Orders
-    {
-        public Guid Id { get; set; }
-        public User User { get; set; }
-        public Guid UserId { get; set; }
-        public OrderStatuses OrderStatuses { get; set; }
-        public int TotalPrice { get; set; }
-        public ICollection<OrderDetail> OrderDetails { get; set; }
-    }
+    public Guid Id { get; set; }
+    public User User { get; set; }
+    public Guid UserId { get; set; }
+    public OrderStatuses OrderStatuses { get; set; }
+    public int TotalPrice { get; set; }
+    public ICollection<OrderDetail> OrderDetails { get; set; }
 }
+
