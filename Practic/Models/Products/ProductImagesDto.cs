@@ -1,10 +1,10 @@
-﻿namespace Shop.Entities.Product
+﻿namespace Shop.Models.Products
 {
-    public class ProductImages
+    public class ProductImagesDto
     {
         public Guid Id { get; set; }
-        public Product Product { get; set; }
         public Guid ProductId { get; set; }
+        public ProductDto Product { get; set; }
         public string ImageLink { get; set; }
     }
 }

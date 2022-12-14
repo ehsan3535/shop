@@ -1,124 +1,141 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using practic.Entities;
-using Practic.Entities;
-using Shop.Models;
-namespace Practic.Controllers
+﻿using Microsoft.AspNetCore.Mvc;
+using Shop.Models.Products;
+using Shop.Entities.Product;
+
+namespace Shop.Controllers
 {
     public class ShopController : Controller
     {
-        private readonly ApplicationDbContex dbContex;
-        private readonly UserManager<User> userManager;
-        private readonly RoleManager<Role> roleManager;
-        private readonly SignInManager<User> signInManager;
-
-        public ShopController(ApplicationDbContex dbContex, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signInManager)
+        private readonly ApplicationDbContext dbContext;
+        public ShopController(ApplicationDbContext dbContext)
         {
-            this.dbContex = dbContex;
-            this.userManager = userManager;
-            this.roleManager = roleManager;
-            this.signInManager = signInManager;
+            this.dbContext = dbContext;
         }
-
-        [HttpPost]
-        public async Task<IActionResult> AddUser(ShopDto Dto)
+        public IActionResult AddProduct()
         {
-            Dto.PhoneNumber = Dto.Username;
-            if (ModelState.IsValid)
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddProduct(ProductDto dto)
+        {
+            var Product = new Product()
             {
-                var FindUser = await userManager.Users.Where(x => x.UserName == Dto.Username).FirstOrDefaultAsync();
-                if (FindUser != null)
+                Name = dto.Name,
+                Detail = dto.Detail,
+                Brand = dto.Brand,
+                Category = dto.Category,
+                Count = dto.Count,
+                Price = dto.Price,
+                Rate = dto.Rate,
+                Test = dto.Test,
+                weight = dto.weight,
+
+            };
+            dbContext.Add(Product);
+            dbContext.SaveChanges();
+
+
+            return RedirectToAction(nameof(ProductList));
+        }
+        public IActionResult ProductList()
+        {
+            var products = dbContext.Products.ToList();
+
+            var model = new List<ProductDto>();
+
+            if (products.Any())
+            {
+                foreach (var product in products)
                 {
-                    ModelState.AddModelError("Username", "کاربر تکراری است");
-                    return RedirectToAction("index", "home");
-                }
-                var User = new User()
-                {
-                    Id = Dto.Id,
-                    Name = Dto.Name,
-                    Email = Dto.Email,
-                    NationalCode = Dto.NationalCode,
-                    PhoneNumber = Dto.PhoneNumber,
-                    UserName = Dto.Username,
-                };
-                var status = await userManager.CreateAsync(User, Dto.Password);
-                if (status.Succeeded)
-                {
-                    var FindRole = await roleManager.FindByNameAsync("NormalUser");
-                    if (FindRole == null)
+                    var productdto = new ProductDto()
                     {
-                        var Role = new Role()
-                        {
-                            Name = "NormalUser",
-                            Description = "this is a normal user"
-                        };
-                        await roleManager.CreateAsync(Role);
-                    }
+                        Id = product.Id,
+                        Name = product.Name,
+                        Brand = product.Brand,
+                        Price = product.Price,
+                        Category = product.Category,
+                        Count = product.Count,
+                        Rate = product.Rate,
+                        Detail = product.Detail,
+                        Test = product.Test,
+                        weight = product.weight,
+
+                    };
+                    model.Add(productdto);
+
                 }
-                await userManager.AddToRoleAsync(User, "NormalUser");
-
-
+                return View(model);
             }
-            return RedirectToAction("index", "home");
+            return View(model);
+
         }
-       
-        [HttpPost]
-        public async Task<IActionResult> Login(string Username, string Password)
+        public IActionResult ProductDetail(Guid ProductId)
         {
-            var User = await userManager.FindByNameAsync(Username);
-            if (User != null)
+            var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
+            if (Product != null)
             {
-                var Status = await signInManager.PasswordSignInAsync(User, Password, true, true);
-                if (Status.Succeeded)
+                var model = new ProductDto()
                 {
-                    return RedirectToAction("index", "home");
-                }
-                return View(nameof(eror3));
+                    Id = Product.Id,
+                    Brand = Product.Brand,
+                    Category = Product.Category,
+                    Price = Product.Price,
+                    Name = Product.Name,
+                    Count = Product.Count,
+                    Detail = Product.Detail,
+                    Rate = Product.Rate,
+                    Test = Product.Test,
+                    weight = Product.weight,
+                };
+                return View(model);
             }
-            return RedirectToAction("eroe2");
-
+            return RedirectToAction(nameof(ProductList));
         }
-        public async Task<IActionResult> LogOut()
+        public IActionResult EditProduct(Guid ProductId)
         {
-
-            await signInManager.SignOutAsync();
-            return RedirectToAction("index", "home");
-
-        }
-        public async Task<IActionResult> Rolelist(Guid UserId)
-        {
-            var ListRole = dbContex.Roles.ToList();
-            var list = new List<string>();
-            foreach (var item in ListRole)
+            var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
+            if (Product != null)
             {
-                list.Add(item.Name);
+                var model = new ProductDto()
+                {
+                    Id = Product.Id,
+                    Brand = Product.Brand,
+                    Category = Product.Category,
+                    Price = Product.Price,
+                    Name = Product.Name,
+                    Count = Product.Count,
+                    Detail = Product.Detail,
+                    Rate = Product.Rate,
+                    Test = Product.Test,
+                    weight = Product.weight,
+                };
+                TempData["ProductId"] = ProductId;
+                return View(model);
             }
-            TempData["UserId"] = UserId;
-
-            return View(list);
+            return RedirectToAction(nameof(ProductList));
         }
-        public async Task<IActionResult> ChoseList(string Role)
+        [HttpPost]
+        public IActionResult EditProduct(ProductDto dto)
         {
-            TempData["UserId"].ToString();
-            var user = await userManager.FindByIdAsync(TempData["UserId"].ToString());
-            await userManager.AddToRoleAsync(user, Role);
+            dto.Id = Guid.Parse(TempData["ProductId"].ToString());
+            var Product = dbContext.Products.Where(x => x.Id == dto.Id).FirstOrDefault();
+            if (Product != null)
+            {
+                Product.Brand = dto.Brand;
+                Product.Category = dto.Category;
+                Product.Price = dto.Price;
+                Product.Name = dto.Name;
+                Product.Count = dto.Count;
+                Product.Detail = dto.Detail;
+                Product.Rate = dto.Rate;
+                Product.Test = dto.Test;
+                Product.weight = dto.weight;
 
-            return View();
-        }
-        public async Task<IActionResult> eror2()
-        {
+                dbContext.Update(Product);
 
-            return View();
-        }
-        public async Task<IActionResult> eror3()
-        {
-
-            return View();
-        }
-        public IActionResult Index()
-        {
-            return View();
+                dbContext.SaveChanges();
+            }
+            return RedirectToAction(nameof(ProductList));
         }
     }
 }

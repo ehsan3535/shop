@@ -2,7 +2,7 @@
 
 namespace Shop.Models
 {
-    public class ShopDto
+    public class UsersDto
     {
         public Guid Id { get; set; }
         [Required(ErrorMessage = "این ایتم اجباری است")]

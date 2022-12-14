@@ -1,20 +1,25 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using practic.Entities;
+using Shop.Entities.Order;
+using Shop.Entities.Product;
+using Shop.Entities.Requset;
+using Users.Entities;
 
-namespace Practic.Entities
+
+public class ApplicationDbContext : IdentityDbContext<User, Role, Guid>
 {
-    public class ApplicationDbContex : IdentityDbContext<User, Role, Guid>
+
+    public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+        : base(options)
     {
-
-        public ApplicationDbContex(DbContextOptions<ApplicationDbContex> options)
-            : base(options)
-        {
-        }
     }
+
+    public DbSet<Product> Products { get; set; }
+    public DbSet<ProductComment> ProductComments { get; set; }
+    public DbSet<ProductImages> ProductImages { get; }
+    public DbSet<Orders> Orders { get; set; }
+    public DbSet<OrderDetail> OrderDetails { get; set; }
+    public DbSet<MokamelRequsets> MokamelRequsets { get; set; }
+    public DbSet<PlanRequest> PlanRequests { get; set; }
+
 }
-
-
-
-
-
