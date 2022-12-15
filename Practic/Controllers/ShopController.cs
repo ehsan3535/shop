@@ -91,7 +91,7 @@ namespace Shop.Controllers
             }
             return RedirectToAction(nameof(ProductList));
         }
-        public IActionResult EditProduct(Guid ProductId)
+       public IActionResult EditProduct(Guid ProductId)
         {
             var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
@@ -117,6 +117,7 @@ namespace Shop.Controllers
         [HttpPost]
         public IActionResult EditProduct(ProductDto dto)
         {
+            //why?(just below sentenc)
             dto.Id = Guid.Parse(TempData["ProductId"].ToString());
             var Product = dbContext.Products.Where(x => x.Id == dto.Id).FirstOrDefault();
             if (Product != null)

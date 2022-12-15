@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shop.Models;
+using System.Xml.Linq;
 using Users.Entities;
 
 namespace Practic.Controllers
@@ -127,6 +128,81 @@ namespace Practic.Controllers
         public IActionResult Index()
         {
             return View();
+        }
+/*        [Authorize(Roles = "Admin")]
+*/        public async Task<IActionResult> Promote(Guid UserId)
+        {
+            var User = await userManager.FindByIdAsync(UserId.ToString());
+
+            if (User != null)
+            {
+                var Role = await roleManager.FindByNameAsync("Admin");
+                if (Role == null)
+                {
+                    Role = new Role()
+                    {
+                        Name = "Admin"
+                    };
+                    await roleManager.CreateAsync(Role);
+                }
+                await userManager.AddToRoleAsync(User, Role.Name);
+            }
+            return RedirectToAction();
+        }
+        public async Task<IActionResult> UserDetail()
+        {
+            var user = await userManager.FindByNameAsync(HttpContext.User.Identity.Name);
+            var model = new UsersDto()
+            {
+                Id = user.Id,
+                Name = user.Name,
+                PhoneNumber = user.PhoneNumber,
+                Username = user.UserName,
+                Email = user.Email,
+                NationalCode = user.NationalCode,
+            };
+
+            return View(model);
+        }
+        public async Task<IActionResult> EditUser(UsersDto dto)
+        {
+            var user = await userManager.FindByIdAsync(dto.Id.ToString());
+
+            var Finduser = await userManager.Users.Where(x => x.Id != dto.Id && x.UserName == dto.Username)
+                .FirstOrDefaultAsync();
+            if (Finduser != null)
+            {
+                return View();
+            }
+
+            user.Name = dto.Name;
+            user.UserName = dto.Username;
+            user.Email = dto.Email;
+            user.NationalCode = dto.NationalCode;
+            user.PhoneNumber = user.PhoneNumber;
+
+            await userManager.UpdateAsync(user);
+
+            return RedirectToAction("ListUser");
+        }
+        public async Task<IActionResult> ListUser()
+        {
+            var user = dbContex.Users.ToList();
+            var model = new List<UsersDto>();
+            foreach (var item in user)
+            {
+                var ListUser = new UsersDto()
+                {
+                    Id = item.Id,
+                    Name = item.Name,
+                    NationalCode = item.NationalCode,
+                    PhoneNumber = item.PhoneNumber,
+                    Email = item.Email,
+                    Username = item.UserName,
+                };
+                model.Add(ListUser);
+            };
+            return View(model);
         }
     }
 }

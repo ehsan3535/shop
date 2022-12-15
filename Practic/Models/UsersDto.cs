@@ -16,7 +16,7 @@ namespace Shop.Models
         [Required(ErrorMessage = "این ایتم اجباری است")]
         public string Password { get; set; }
         [Required(ErrorMessage = "این ایتم اجباری است")]
-        [Compare(nameof(Password), ErrorMessage = "پشورد ها شبیه به هم نیستند")]
+        [Compare(nameof(Password), ErrorMessage = "پسورد ها شبیه به هم نیستند")]
         public string PasswordConfirm { get; set; }
         [Required(ErrorMessage = "این ایتم اجباری است")]
         [DataType(DataType.EmailAddress)]
