@@ -2,6 +2,7 @@
 using Shop.Models.Products;
 using Shop.Entities.Product;
 
+
 namespace Shop.Controllers
 {
     public class ShopController : Controller
@@ -138,5 +139,11 @@ namespace Shop.Controllers
             }
             return RedirectToAction(nameof(ProductList));
         }
+        public IActionResult Product()
+        {
+            return View();
+        }
+
     }
 }
+

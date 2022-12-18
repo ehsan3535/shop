@@ -16,8 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\Mr.Haghjoo\Practic\shop\Practic
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Dashboard/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
+[C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Dashboard/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaGJvYXJkXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Home/Index.cshtml]
@@ -36,12 +36,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Shop/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Shop/eroe2.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxlcm9lMi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Shop/eror3.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxlcm9yMy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Shop/Product.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/Users/Dashboard_Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGFzaGJvYXJkX0FkbWluLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/user/Desktop/Mr.Haghjoo/Practic/shop/Practic/Views/_ViewImports.cshtml]

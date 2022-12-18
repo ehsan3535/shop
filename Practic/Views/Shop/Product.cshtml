@@ -1,0 +1,394 @@
+﻿
+        <div class="row">
+
+            <div class="col-lg-12">
+                <div class="portlet box border shadow">
+                    <div class="portlet-heading">
+                        <div class="portlet-title">
+                            <h3 class="title">
+                                <i class="icon-basket-loaded fa-flip-horizontal"></i>
+                                فهرست سفارشات
+                            </h3>
+                        </div><!-- /.portlet-title -->
+                        <div class="buttons-box">
+                            <a class="btn btn-sm btn-default btn-round btn-code" rel="tooltip" title="کدها" href="#">
+                                <i class="icon-arrow-left"></i><span>/</span><i class="icon-arrow-right"></i>
+                            </a>
+                            <div class="code-modal hide">
+                            </div>
+                            <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
+                                <i class="icon-size-fullscreen"></i>
+                            </a>
+                            <a class="btn btn-sm btn-default btn-round btn-collapse" rel="tooltip" title="کوچک کردن" href="#">
+                                <i class="icon-arrow-up"></i>
+                            </a>
+                        </div><!-- /.buttons-box -->
+                    </div><!-- /.portlet-heading -->
+                    <div class="portlet-body">
+                        <div class="row">
+                            <div class="col-md-4 col-12 m-b-20">
+                                <a class="btn btn-success btn-round" href="create_product.html">
+                                    <i class="icon-plus"></i>
+                                    افزودن
+                                </a>
+                                <a class="btn btn-info btn-round" href="Product.html">
+                                    <i class="icon-layers"></i>
+                                    بایگانی
+                                </a>
+                            </div><!-- /.col-md-4 -->
+                            <div class="col-md-4 col-12 m-b-20">
+                                <form role="form">
+                                    <div class="input-group round">
+                                        <input type="text" class="form-control" placeholder="جستجو...">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default" type="button">
+                                                <i class="icon-magnifier"></i>
+                                                <div class="paper-ripple">
+                                            </button>
+                                        </span>
+                                    </div><!-- ./input-group -->
+                                </form>
+                            </div><!-- /.col-md-4 -->
+                            <div class="col-md-4 col-12 m-b-20">
+                                <select class="form-select round">
+                                    <option value="0">مرتب سازی بر اساس تاریخ</option>
+                                    <option value="1">مرتب سازی بر اساس محصول</option>
+                                    <option value="2">مرتب سازی بر اساس مبلغ</option>
+                                    <option value="3">مرتب سازی بر اساس وضعیت</option>
+                                </select>
+                            </div><!-- /.col-md-4 -->
+                        </div><!-- /.row -->
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th><i class="icon-energy"></i></th>
+                                        <th>نام خریدار</th>
+                                        <th>دسته بندی</th>
+                                        <th>مبلغ</th>
+                                        <th>وضعیت</th>
+                                        <th>مدیریت</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <span>
+                                                کراتین
+                                            </span>
+                                        </td>
+                                        <td>حجم دهنده</td>
+                                        <td>515,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>
+                                            <span>
+                                                گلوتامین
+                                            </span>
+                                        </td>
+                                        <td>عضله ساز</td>
+                                        <td>180,500</td>
+                                        <td>
+                                            <label class="label-danger round">ناموجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>
+                                            <span>
+                                                پروتئین وی
+                                            </span>
+                                        </td>
+                                        <td>عضله ساز</td>
+                                        <td>120,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>
+                                            <span>
+                                                مولتی ویتامین
+                                            </span>
+                                        </td>
+                                        <td>تقویتی</td>
+                                        <td>250,000</td>
+                                        <td>
+                                            <label class="label-danger round">ناموجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>
+                                            <span>
+                                                پودر گینر
+                                            </span>
+                                        </td>
+                                        <td>افزایش وزن</td>
+                                        <td>530,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>
+                                            <span>
+                                                کراتین
+                                            </span>
+                                        </td>
+                                        <td>حجم دهنده</td>
+                                        <td>515,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>
+                                            <span>
+                                                گلوتامین
+                                            </span>
+                                        </td>
+                                        <td>عضله ساز</td>
+                                        <td>180,500</td>
+                                        <td>
+                                            <label class="label-danger round">ناموجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>
+                                            <span>
+                                                پروتئین وی
+                                            </span>
+                                        </td>
+                                        <td>عضله ساز</td>
+                                        <td>120,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>
+                                            <span>
+                                                مولتی ویتامین
+                                            </span>
+                                        </td>
+                                        <td>تقویتی</td>
+                                        <td>250,000</td>
+                                        <td>
+                                            <label class="label-danger round">ناموجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>
+                                            <span>
+                                                پودر گینر
+                                            </span>
+                                        </td>
+                                        <td>افزایش وزن</td>
+                                        <td>530,000</td>
+                                        <td>
+                                            <label class="label-success round">موجود</label>
+                                        </td>
+                                        <td>
+                                            <a href="view_product.html" class="btn btn-success btn-round">
+                                                <i class="icon-eyeglass"></i>
+                                                مشاهده
+                                            </a>
+                                            <a href="edit_product.html" class="btn btn-info btn-round">
+                                                <i class="icon-note"></i>
+                                                ویرایش
+                                            </a>
+                                            <a href="#" class="btn btn-danger btn-round btn-noty-with-buttons">
+                                                <i class="icon-trash"></i>
+                                                حذف
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div><!-- /.table-responsive -->
+                        <div class="text-center">
+                            <ul class="pagination round">
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-control-end"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-arrow-right"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">1</a>
+                                </li>
+                                <li>
+                                    <span class="active" href="#">2</span>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li>
+                                    <a href="#">6</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-arrow-left"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="icon-control-start"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /.text-center -->
+                    </div><!-- /.portlet-body -->
+                </div><!-- /.portlet -->
+            </div><!-- /.col-lg-12 -->
+
+
+        </div><!-- /.row -->
