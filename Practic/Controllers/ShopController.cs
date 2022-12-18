@@ -21,6 +21,7 @@ namespace Shop.Controllers
         {
             var Product = new Product()
             {
+                Number=dto.Number,
                 Name = dto.Name,
                 Detail = dto.Detail,
                 Brand = dto.Brand,
@@ -51,6 +52,7 @@ namespace Shop.Controllers
                     var productdto = new ProductDto()
                     {
                         Id = product.Id,
+                        Number = product.Number,
                         Name = product.Name,
                         Brand = product.Brand,
                         Price = product.Price,
@@ -78,6 +80,7 @@ namespace Shop.Controllers
                 var model = new ProductDto()
                 {
                     Id = Product.Id,
+                    Number = Product.Number,
                     Brand = Product.Brand,
                     Category = Product.Category,
                     Price = Product.Price,
@@ -100,6 +103,7 @@ namespace Shop.Controllers
                 var model = new ProductDto()
                 {
                     Id = Product.Id,
+                    Number = Product.Number,
                     Brand = Product.Brand,
                     Category = Product.Category,
                     Price = Product.Price,
@@ -123,6 +127,7 @@ namespace Shop.Controllers
             var Product = dbContext.Products.Where(x => x.Id == dto.Id).FirstOrDefault();
             if (Product != null)
             {
+                Product.Number = dto.Number;
                 Product.Brand = dto.Brand;
                 Product.Category = dto.Category;
                 Product.Price = dto.Price;

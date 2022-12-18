@@ -27,6 +27,9 @@
     <link href="~/assets/plugins/kamadatepicker/kamadatepicker.min.css" rel="stylesheet">
     <link href="~/assets/css/effects.css" rel="stylesheet">
     <!-- END PAGE CSS -->
+    <!-- BEGIN PAGE CSS -->
+    <link href="~/assets/plugins/noty/css/flat.css" rel="stylesheet">
+    <!-- END PAGE CSS -->
 </head>
 <body class="active-ripple theme-blue fix-header sidebar-extra">
     <!-- BEGIN LOEADING -->
@@ -382,7 +385,7 @@
                         </ul>
                     </li>
                     <li class="open active conditional-bg">
-                        <a href="Product.html">
+                        <a href="/shop/Product">
                             <i class="icon-basket-loaded fa-flip-horizontal"></i>
                             <span>محصولات</span>
                         </a>
@@ -488,43 +491,13 @@
     <!-- BEGIN PAGE CONTENT -->
     <div id="page-content">
         <div class="row">
-            <!-- BEGIN BREADCRUMB -->
-            <div class="col-md-12">
-                <div class="breadcrumb-box border shadow">
-                    <ul class="breadcrumb">
-                        <li><a href="dashboard.html">پیشخوان</a></li>
-                        <li><a href="#">صفحات</a></li>
-                        <li class="active">صفحه خام</li>
-                    </ul>
-                    <div class="breadcrumb-left">
-                        سه شنبه، 1401/09/15
-                        <i class="icon-calendar"></i>
-                    </div><!-- /.breadcrumb-left -->
-                </div><!-- /.breadcrumb-box -->
-            </div><!-- /.col-md-12 -->
-            <!-- END BREADCRUMB -->
 
-            <div class="col-12">
-                <div class="panel ">
-                    <div class="panel-heading">
-                        <div class="panel-title">
-                            <h3 class="title">
-                            </h3>
-                        </div>
-                        <!-- /.panel-title -->
 
-                    </div><!-- /.panel-heading -->
-                    <div class="panel-body">
 
-                        <div id="main-wrapper">
-                            <div class="clearfix"></div>
-                            @RenderBody()
-                        </div>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
-            </div><!-- /.col-12 -->
+            <div id="main-wrapper">
+                <div class="clearfix"></div>
+                @RenderBody()
+            </div>
         </div><!-- /.row -->
     </div><!-- /#page-content -->
     <!-- END PAGE CONTENT -->
@@ -639,6 +612,11 @@
     <script src="~/assets/plugins/jquery-knob/dist/jquery.knob.min.js"></script>
     <script src="~/assets/js/pages/dashboard1.js"></script>
     <!-- END PAGE JAVASCRIPT -->
+    <!-- BEGIN PAGE JAVASCRIPT -->
+    <script src="~/assets/plugins/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+    <script src="~/assets/js/pages/noty.js"></script>
+    <!-- END PAGE JAVASCRIPT -->
+
 </body>
 </html>
 @await RenderSectionAsync("Scripts",false)
