@@ -30,6 +30,7 @@
     <!-- BEGIN PAGE CSS -->
     <link href="~/assets/plugins/noty/css/flat.css" rel="stylesheet">
     <!-- END PAGE CSS -->
+    @RenderSection("Styles",false)
 </head>
 <body class="active-ripple theme-blue fix-header sidebar-extra">
     <!-- BEGIN LOEADING -->
@@ -298,7 +299,6 @@
     <!-- END HEADER -->
     <!-- BEGIN WRAPPER -->
     <div id="wrapper">
-
         <!-- BEGIN SIDEBAR -->
         <div id="sidebar">
             <div class="sidebar-top">
@@ -385,7 +385,7 @@
                         </ul>
                     </li>
                     <li class="open active conditional-bg">
-                        <a href="/shop/Product">
+                        <a href="/shop/ProductList">
                             <i class="icon-basket-loaded fa-flip-horizontal"></i>
                             <span>محصولات</span>
                         </a>
@@ -485,22 +485,15 @@
             </div><!-- /.side-menu-container -->
         </div><!-- /#sidebar -->
         <!-- END SIDEBAR -->
-
+        <div id="page-content">
+            <div class="row">
+                    @RenderBody()
+            </div><!-- /.row -->
+        </div><!-- /#page-content -->
+        <!-- END PAGE CONTENT -->
     </div><!-- /#wrapper -->
     <!-- END WRAPPER -->
     <!-- BEGIN PAGE CONTENT -->
-    <div id="page-content">
-        <div class="row">
-
-          
-
-                        <div id="main-wrapper">
-                            <div class="clearfix"></div>
-                            @RenderBody()
-                        </div>
-        </div><!-- /.row -->
-    </div><!-- /#page-content -->
-    <!-- END PAGE CONTENT -->
     <!-- ********************************************************************************
     ********************************************************************************
     ********************************************************************************
@@ -612,11 +605,11 @@
     <script src="~/assets/plugins/jquery-knob/dist/jquery.knob.min.js"></script>
     <script src="~/assets/js/pages/dashboard1.js"></script>
     <!-- END PAGE JAVASCRIPT -->
-     <!-- BEGIN PAGE JAVASCRIPT -->
-        <script src="~/assets/plugins/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
-        <script src="~/assets/js/pages/noty.js"></script>
-        <!-- END PAGE JAVASCRIPT -->    
+    <!-- BEGIN PAGE JAVASCRIPT -->
+    <script src="~/assets/plugins/noty/js/noty/packaged/jquery.noty.packaged.min.js"></script>
+    <script src="~/assets/js/pages/noty.js"></script>
+    <!-- END PAGE JAVASCRIPT -->
+    @await RenderSectionAsync("Scripts",false)
 
 </body>
 </html>
-@await RenderSectionAsync("Scripts",false)

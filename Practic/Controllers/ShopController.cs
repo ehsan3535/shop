@@ -26,10 +26,9 @@ namespace Shop.Controllers
                 Detail = dto.Detail,
                 Brand = dto.Brand,
                 Category = dto.Category,
-                Count = dto.Count,
                 Price = dto.Price,
-                Rate = dto.Rate,
                 Test = dto.Test,
+                mojod= dto.mojod,
                 weight = dto.weight,
 
             };
@@ -58,9 +57,9 @@ namespace Shop.Controllers
                         Price = product.Price,
                         Category = product.Category,
                         Count = product.Count,
-                        Rate = product.Rate,
                         Detail = product.Detail,
                         Test = product.Test,
+                        mojod=product.mojod,
                         weight = product.weight,
 
                     };
@@ -87,8 +86,8 @@ namespace Shop.Controllers
                     Name = Product.Name,
                     Count = Product.Count,
                     Detail = Product.Detail,
-                    Rate = Product.Rate,
                     Test = Product.Test,
+                    mojod = Product.mojod,
                     weight = Product.weight,
                 };
                 return View(model);
@@ -110,8 +109,8 @@ namespace Shop.Controllers
                     Name = Product.Name,
                     Count = Product.Count,
                     Detail = Product.Detail,
-                    Rate = Product.Rate,
                     Test = Product.Test,
+                    mojod = Product.mojod,
                     weight = Product.weight,
                 };
                 TempData["ProductId"] = ProductId;
@@ -134,8 +133,8 @@ namespace Shop.Controllers
                 Product.Name = dto.Name;
                 Product.Count = dto.Count;
                 Product.Detail = dto.Detail;
-                Product.Rate = dto.Rate;
                 Product.Test = dto.Test;
+                Product.mojod = dto.mojod;
                 Product.weight = dto.weight;
 
                 dbContext.Update(Product);
@@ -148,7 +147,14 @@ namespace Shop.Controllers
         {
             return View();
         }
+        public IActionResult delete(Guid Id)
+        {
+            var Product = dbContext.Products.Where(x => x.Id == Id).FirstOrDefault();
+            dbContext.Products.Remove(Product);
+            dbContext.SaveChanges();
 
+            return RedirectToAction("ProductList");
+        }
     }
 }
 

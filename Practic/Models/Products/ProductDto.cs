@@ -19,7 +19,7 @@
         public ProductDto SameProduct2 { get; set; }
         public Guid SameProduct3Id { get; set; }
         public ProductDto SameProduct3 { get; set; }
-        public string Rate { get; set; }
+        public string? Rate { get; set; }
         public ICollection<ProductImagesDto> ProductImages { get; set; }
         public ICollection<ProductCommentDto> ProductComments { get; set; }
 
