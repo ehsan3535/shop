@@ -1,0 +1,114 @@
+﻿<div class="col-lg-12">
+    <div class="portlet box border shadow">
+        <div class="portlet-heading">
+            <div class="portlet-title">
+                <h3 class="title">
+                    <i class="icon-magic-wand"></i>
+                    مشاهده محصول
+                </h3>
+            </div><!-- /.portlet-title -->
+        </div><!-- /.portlet-heading -->
+        <div class="portlet-body">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <div class="portlet box border shadow">
+                        <div class="portlet-heading">
+                            <div class="portlet-title">
+                                <h3 class="title">
+
+                                    ویژگی های محصول
+                                </h3>
+                            </div><!-- /.portlet-title -->
+                            <div class="buttons-box">
+                                <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
+                                    <i class="icon-size-fullscreen"></i>
+                                </a>
+                                <a class="btn btn-sm btn-default btn-round btn-collapse" rel="tooltip" title="کوچک کردن" href="#">
+                                    <i class="icon-arrow-up"></i>
+                                </a>
+                            </div><!-- /.buttons-box -->
+                        </div><!-- /.portlet-heading -->
+                        <div class="portlet-body">
+                            <div class="form-group">
+
+                                <div class="input-group">
+                                    <p>
+                                        <label>
+                                            شماره محصول : @Model.Number
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            نام محصول :@Model.Name
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            وزن :@Model.weight
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            طعم :@Model.Test
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            دسته بندی :@Model.Category
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            برند :@Model.Brand
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            قیمت :@Model.Price
+                                        </label>
+                                    </p>
+                                </div><!-- /.input-group -->
+                                <hr>
+                                <div class="input-group">
+                                    <div class="form-group row">
+                                        <label class="col-sm-3">جزئیات</label>
+                                        <div class="col-lg-12">
+                                            <textarea class="form-control" rows="5" placeholder="@Model.Detail"></textarea>
+                                        </div>
+                                    </div><!-- /.input-group -->
+                                    <hr>
+                                </div><!-- /.form-group -->
+                                <div class="form-actions">
+                                    <button type="button" class="btn btn-warning btn-round">
+                                        بازگشت
+                                        <i class="icon-close"></i>
+                                    </button>
+                                </div><!-- /.form-actions -->
+                            </div><!-- /.portlet-body -->
+                        </div><!-- /.portlet -->
+                    </div><!-- /.col-lg-6 -->
+
+
+
+
+                </div><!-- /.row -->
+
+                <div class="col-md-6 col-sm-6">
+                    <div class="effect bottom-to-top-effect">
+                        <div class="info-hover">
+                            <h2>
+                                <span class="title">حافظیه</span>
+                            </h2>
+                            <a href="edit_product.html" class="url">
+                                ویرایش
+                            </a>
+                        </div><!-- /.info-hover -->
+                        <img src="assets/images/other/hafez-tomb.jpg" class="img-center img-responsive" alt="">
+                    </div><!-- /.effect -->
+                </div><!-- /.col -->
+
+
+            </div><!-- /.portlet-body -->
+        </div><!-- /.portlet -->
+    </div><!-- /.col-lg-12 -->

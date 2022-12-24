@@ -2,6 +2,7 @@
 using Shop.Models.Products;
 using Shop.Entities.Product;
 
+
 namespace Shop.Controllers
 {
     public class ShopController : Controller
@@ -20,14 +21,14 @@ namespace Shop.Controllers
         {
             var Product = new Product()
             {
+                Number=dto.Number,
                 Name = dto.Name,
                 Detail = dto.Detail,
                 Brand = dto.Brand,
                 Category = dto.Category,
-                Count = dto.Count,
                 Price = dto.Price,
-                Rate = dto.Rate,
                 Test = dto.Test,
+                mojod= dto.mojod,
                 weight = dto.weight,
 
             };
@@ -50,14 +51,15 @@ namespace Shop.Controllers
                     var productdto = new ProductDto()
                     {
                         Id = product.Id,
+                        Number = product.Number,
                         Name = product.Name,
                         Brand = product.Brand,
                         Price = product.Price,
                         Category = product.Category,
                         Count = product.Count,
-                        Rate = product.Rate,
                         Detail = product.Detail,
                         Test = product.Test,
+                        mojod=product.mojod,
                         weight = product.weight,
 
                     };
@@ -77,14 +79,15 @@ namespace Shop.Controllers
                 var model = new ProductDto()
                 {
                     Id = Product.Id,
+                    Number = Product.Number,
                     Brand = Product.Brand,
                     Category = Product.Category,
                     Price = Product.Price,
                     Name = Product.Name,
                     Count = Product.Count,
                     Detail = Product.Detail,
-                    Rate = Product.Rate,
                     Test = Product.Test,
+                    mojod = Product.mojod,
                     weight = Product.weight,
                 };
                 return View(model);
@@ -99,14 +102,15 @@ namespace Shop.Controllers
                 var model = new ProductDto()
                 {
                     Id = Product.Id,
+                    Number = Product.Number,
                     Brand = Product.Brand,
                     Category = Product.Category,
                     Price = Product.Price,
                     Name = Product.Name,
                     Count = Product.Count,
                     Detail = Product.Detail,
-                    Rate = Product.Rate,
                     Test = Product.Test,
+                    mojod = Product.mojod,
                     weight = Product.weight,
                 };
                 TempData["ProductId"] = ProductId;
@@ -122,14 +126,15 @@ namespace Shop.Controllers
             var Product = dbContext.Products.Where(x => x.Id == dto.Id).FirstOrDefault();
             if (Product != null)
             {
+                Product.Number = dto.Number;
                 Product.Brand = dto.Brand;
                 Product.Category = dto.Category;
                 Product.Price = dto.Price;
                 Product.Name = dto.Name;
                 Product.Count = dto.Count;
                 Product.Detail = dto.Detail;
-                Product.Rate = dto.Rate;
                 Product.Test = dto.Test;
+                Product.mojod = dto.mojod;
                 Product.weight = dto.weight;
 
                 dbContext.Update(Product);
@@ -138,5 +143,18 @@ namespace Shop.Controllers
             }
             return RedirectToAction(nameof(ProductList));
         }
+        public IActionResult Product()
+        {
+            return View();
+        }
+        public IActionResult delete(Guid Id)
+        {
+            var Product = dbContext.Products.Where(x => x.Id == Id).FirstOrDefault();
+            dbContext.Products.Remove(Product);
+            dbContext.SaveChanges();
+
+            return RedirectToAction("ProductList");
+        }
     }
 }
+

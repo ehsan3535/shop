@@ -125,12 +125,12 @@ namespace Practic.Controllers
 
             return View();
         }
-        public IActionResult Index()
+        public IActionResult Dashboard_Admin()
         {
             return View();
         }
 /*        [Authorize(Roles = "Admin")]
-*/        public async Task<IActionResult> Promote(Guid UserId)
+*/      public async Task<IActionResult> Promote(Guid UserId)
         {
             var User = await userManager.FindByIdAsync(UserId.ToString());
 
