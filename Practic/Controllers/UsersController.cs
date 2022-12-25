@@ -6,7 +6,7 @@ using Shop.Models;
 using System.Xml.Linq;
 using Users.Entities;
 
-namespace Practic.Controllers
+namespace Users.Controllers
 {
     public class UsersController : Controller
     {
@@ -69,14 +69,14 @@ namespace Practic.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(string Username, string Password)
+        public async Task<IActionResult> Login(UsersDto dto , string password)
         {
-            var User = await userManager.FindByNameAsync(Username);
+            var User = await userManager.FindByNameAsync(dto.Username);
 
             if (User != null)
 
             {
-                var Status = await signInManager.PasswordSignInAsync(User, Password, true, true);
+                var Status = await signInManager.PasswordSignInAsync(User, password , true, true);
                 if (Status.Succeeded)
                 {
                     return RedirectToAction("index", "home");
@@ -129,8 +129,9 @@ namespace Practic.Controllers
         {
             return View();
         }
-/*        [Authorize(Roles = "Admin")]
-*/      public async Task<IActionResult> Promote(Guid UserId)
+        /*        [Authorize(Roles = "Admin")]
+        */
+        public async Task<IActionResult> Promote(Guid UserId)
         {
             var User = await userManager.FindByIdAsync(UserId.ToString());
 
@@ -164,8 +165,29 @@ namespace Practic.Controllers
 
             return View(model);
         }
+        public IActionResult EditUser(Guid UserId)
+        {
+            var user = dbContex.Users.Where(x => x.Id == UserId).FirstOrDefault();
+            if (user != null)
+            {
+                var model = new UsersDto()
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    Name = user.Name,
+                    NationalCode = user.NationalCode,
+                    PhoneNumber = user.PhoneNumber,
+                    Username = user.UserName,
+                };
+                TempData["UserId"] = UserId;
+                return View(model);
+            }
+            return RedirectToAction(nameof(ListUser));
+        }
+        [HttpPost]
         public async Task<IActionResult> EditUser(UsersDto dto)
         {
+            dto.Id = Guid.Parse(TempData["UserId"].ToString());
             var user = await userManager.FindByIdAsync(dto.Id.ToString());
 
             var Finduser = await userManager.Users.Where(x => x.Id != dto.Id && x.UserName == dto.Username)
@@ -185,7 +207,7 @@ namespace Practic.Controllers
 
             return RedirectToAction("ListUser");
         }
-        public async Task<IActionResult> ListUser()
+        public IActionResult ListUser()
         {
             var user = dbContex.Users.ToList();
             var model = new List<UsersDto>();
