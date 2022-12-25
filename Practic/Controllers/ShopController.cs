@@ -155,6 +155,13 @@ namespace Shop.Controllers
 
             return RedirectToAction("ProductList");
         }
+        public IActionResult Shop()
+        {
+            return View();
+        }
+        public IActionResult ProductDetail_User()
+        {
+             return View();
+        }
     }
 }
-

@@ -3793,6 +3793,770 @@
       "PackagePath": "staticwebassets\\assets\\scss\\colors.scss"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\colors.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\colors.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\Flaticond41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\Flaticond41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb(FaNum).woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb(FaNum).woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\IRANSansWeb\\IRANSansWeb.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\LineIcons5594.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\LineIcons5594.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\LineIcons5594.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\LineIcons5594.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\LineIcons5594.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\LineIcons5594.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-brands-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-brands-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-regular-400d41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-regular-400d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\fa-solid-900d41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\fa-solid-900d41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\houses.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\houses.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\houses.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\houses.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\houses.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\houses.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\housesd41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\housesd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\slick.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\slick.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\slickd41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\slickd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\themify9f24.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\themify9f24.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\themify9f24.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\themify9f24.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\themify9f24.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\themify9f24.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\themifyd41d.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\themifyd41d.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Bold-FD.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Bold-FD.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Bold.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir-Meduim-FD.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir-Meduim-FD.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir.eot",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir.eot"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir.ttf",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir.ttf"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir.woff",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir.woff"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\fonts\\vazir\\Vazir.woff2",
+      "PackagePath": "staticwebassets\\assets_user\\css\\fonts\\vazir\\Vazir.woff2"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\img\\loading.gif",
+      "PackagePath": "staticwebassets\\assets_user\\css\\img\\loading.gif"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\animation.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\animation.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\calendare_arrow.png",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\calendare_arrow.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\date-picker.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\date-picker.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\datepicker-theme.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\datepicker-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\daterangepicker.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\daterangepicker.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\dropzone.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\dropzone.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\font-awesome.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\fonts\\slick.html",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\fonts\\slick.html"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\iconfont.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\iconfont.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\ion.rangeSlider.min.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\ion.rangeSlider.min.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\light-box.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\light-box.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\line-icons.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\line-icons.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\magnifypopup.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\magnifypopup.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\morris.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\morris.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\select2.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\select2.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\slick-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\slick.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\slick.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\plugins\\themify.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\plugins\\themify.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\css\\styles.css",
+      "PackagePath": "staticwebassets\\assets_user\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\404.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\404.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\6518.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\6518.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\b-1.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\b-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\b-2.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\b-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\b-3.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\b-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\banner-1.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\banner-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\banner-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\banner-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\banner-4.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\banner-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\banner-5.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\banner-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\bg-new.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\bg-new.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\blog-sm-01.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\blog-sm-01.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\blog-sm-02.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\blog-sm-02.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\blog-sm-03.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\blog-sm-03.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-1.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-2.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-3.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-4.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-5.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-6.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-7.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-8.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-8.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\book-9.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\book-9.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-1.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-2.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-3.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-4.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-5.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-6.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\brand-7.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\brand-7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\briefcase.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\briefcase.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\career.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\career.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\circle-6.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\circle-6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-1.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-2.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-3.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-4.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-5.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-6.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\co-7.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\co-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\color-search.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\color-search.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\content.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\content.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-1.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-10.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-11.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-2.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-3.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-4.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-5.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-6.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-7.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-8.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\course-9.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\course-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\designer.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\designer.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\e.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\edu_1.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\edu_1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\edu_2.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\edu_2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\eloip.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\eloip.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\facebook.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\facebook.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\google.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\google.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\green-logo.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\green-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\h-3.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\h-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\h-5.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\h-5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\health.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\health.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-1.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-1.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-2.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-3.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-4.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-5.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-5.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-6.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-6.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-7.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-7.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-8.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-8.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\lg-9.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\lg-9.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\loader.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\loader.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\log.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\log.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\logo-light.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\logo-light.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\mastercard.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\mastercard.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\medal.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\medal.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\pat.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\pat.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\paypal.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\paypal.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\photo.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\photo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\pin.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\pin.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\python.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\python.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\schedule.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\schedule.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\search.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\search.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\search.svg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\search.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\speaker.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\speaker.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\st-3.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\st-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\star-banner.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\star-banner.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\testimonial.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\testimonial.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-1.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-2.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-3.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-4.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-5.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-6.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-7.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\user-8.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\user-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\video.jpg",
+      "PackagePath": "staticwebassets\\assets_user\\img\\video.jpg"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\visa.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\visa.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\img\\yoga.png",
+      "PackagePath": "staticwebassets\\assets_user\\img\\yoga.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\counterup.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\custom.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\daterangepicker-fa-ex.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\daterangepicker-fa-ex.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\daterangepicker.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\dropzone.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\dropzone.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\jquery.counterup.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\jquery.counterup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\metisMenu.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\metisMenu.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\moment-jalaali.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\moment-jalaali.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\moment.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\moment.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\select2.min.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\assets_user\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets_user\\js\\slick.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

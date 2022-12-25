@@ -22,12 +22,4 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="6.0.11" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\assets\plugins\ckeditor-full\adapters\" />
-    <Folder Include="wwwroot\assets\plugins\ckeditor-full\samples\" />
-    <Folder Include="wwwroot\assets\plugins\noty\js\noty\layouts\" />
-    <Folder Include="wwwroot\assets\plugins\noty\js\noty\themes\" />
-    <Folder Include="wwwroot\assets\plugins\paper-ripple\dist\systemjs\" />
-  </ItemGroup>
-
 </Project>
