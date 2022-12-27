@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Shop.Models.Products;
 using Shop.Entities.Product;
-
+using Microsoft.Win32.SafeHandles;
 
 namespace Shop.Controllers
 {
@@ -30,7 +30,6 @@ namespace Shop.Controllers
                 Test = dto.Test,
                 mojod= dto.mojod,
                 weight = dto.weight,
-
             };
             dbContext.Add(Product);
             dbContext.SaveChanges();
@@ -157,11 +156,60 @@ namespace Shop.Controllers
         }
         public IActionResult Shop()
         {
-            return View();
+            var products = dbContext.Products.ToList();
+
+            var model = new List<ProductDto>();
+
+            if (products.Any())
+            {
+                foreach (var product in products)
+                {
+                    var productdto = new ProductDto()
+                    {
+                        Id = product.Id,
+                        Number = product.Number,
+                        Name = product.Name,
+                        Brand = product.Brand,
+                        Price = product.Price,
+                        Category = product.Category,
+                        Count = product.Count,
+                        Detail = product.Detail,
+                        Test = product.Test,
+                        mojod = product.mojod,
+                        weight = product.weight,
+
+                    };
+                    model.Add(productdto);
+
+                }
+                return View(model);
+            }
+            return View(model);
+
+
         }
-        public IActionResult ProductDetail_User()
+        public IActionResult ProductDetail_User(Guid ProductId)
         {
-             return View();
+              var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
+            if (Product != null)
+            {
+                var model = new ProductDto()
+                {
+                    Id = Product.Id,
+                    Number = Product.Number,
+                    Brand = Product.Brand,
+                    Category = Product.Category,
+                    Price = Product.Price,
+                    Name = Product.Name,
+                    Count = Product.Count,
+                    Detail = Product.Detail,
+                    Test = Product.Test,
+                    mojod = Product.mojod,
+                    weight = Product.weight,
+                };
+                return View(model);
+            }
+            return RedirectToAction(nameof(Shop));
         }
     }
 }

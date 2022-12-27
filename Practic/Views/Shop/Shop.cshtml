@@ -28,16 +28,19 @@
                                 
                                 <div class="row">
                             
+
+                                    @foreach (var item in Model)
+                                    {
                                     <!-- Single Product -->
                                     <div class="col-lg-4 col-md-4 col-sm-6">
                                 
                                         <div class="shop_grid">
                                             <div class="shop_status hot">ویژه</div>
                                             <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-1.png" class="img-fluid" alt="" /></a>
+                                                <a href="#"><img src="~/assets_user/img/book-1.png" class="img-fluid" alt="" /></a>
                                             </div>
                                             <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب تابستان یازدهم ریاضی</a></h4>
+                                                <h4 class="sg_rate_title"><a href="#">@item.Name</a></h4>
                                                 <div class="shop_grid_rate">
                                                     <i class="fas fa-star filled"></i>
                                                     <i class="fas fa-star filled"></i>
@@ -45,228 +48,16 @@
                                                     <i class="fas fa-star filled"></i>
                                                     <i class="fas fa-star"></i>
                                                 </div>
-                                                <span class="sg_rate theme-cl">38000 تومان</span>
+                                            <span class="sg_rate theme-cl">@item.Price</span>
                                             </div>
                                             <div class="shop_grid_action">
-                                                <a href="ProductDetail_User" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
+                                                <a href="/Shop/ProductDetail_User?ProductId=@item.Id" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
                                                 <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
                                             </div>
                                         </div>
                                         
                                     </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-2.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب آبی پیمانه ای اقتصاد کنکور انسانى</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">63000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_status sell">جدید</div>
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-3.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب آبی پیمانه ای زیست شناسی</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">129000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-4.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب آبی پیمانه ای شیمی پایه</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">249000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_status hot">ویژه</div>
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-5.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب آبی پیمانه ای شیمی دوازدهم</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">359000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_status sell">جدید</div>
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-6.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب آبی پیمانه ای عربی کنکور</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">68000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-7.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب عربی عمار (واژه نامه جامع انسانی)</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">19000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_status hot">ویژه</div>
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-8.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">جامعه شناسی کنکور انسانی</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">149000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
-                                    <!-- Single Product -->
-                                    <div class="col-lg-4 col-md-4 col-sm-6">
-                                
-                                        <div class="shop_grid">
-                                            <div class="shop_grid_thumb">
-                                                <a href="#"><img src="assets_user/img/book-9.png" class="img-fluid" alt="" /></a>
-                                            </div>
-                                            <div class="shop_grid_caption">
-                                                <h4 class="sg_rate_title"><a href="#">کتاب تست شیمی دوازدهم</a></h4>
-                                                <div class="shop_grid_rate">
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                    <i class="fas fa-star filled"></i>
-                                                </div>
-                                                <span class="sg_rate theme-cl">249000 تومان</span>
-                                            </div>
-                                           <div class="shop_grid_action">
-                                                <a href=ProductDetail_User class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="مشاهده"><i class="ti-zoom-in"></i></a>
-                                                <a href="#" class="btn btn-shop" data-toggle="tooltip" data-placement="top" title="افزودن به سبد"><i class="ti-shopping-cart"></i></a>
-                                            </div>
-                                        </div>
-                                        
-                                    </div>
-                                    
+                                    }
                                 </div>
                                 
                                 
