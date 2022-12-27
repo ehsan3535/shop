@@ -31,7 +31,8 @@ function generateWithButtons() {
         layout: "center",
         theme: "flat",
         buttons: [
-            {addClass: "btn btn-primary btn-round", text: "تائید", onClick: function($noty) {
+            {
+                addClass: "btn btn-primary btn-round", text: "تائید", onClick: function ($noty) {
                     $noty.close();
                     noty({dismissQueue: true, force: true, layout: "center", theme: "flat", text: "شما 'تائید' را انتخاب کردید", type: "success"});
                 }
