@@ -6,7 +6,7 @@
 
 		<div class="woo-single-images">
 			<div class="feature-style-single">
-				<img src="assets_user/img/book-1.png" alt="product-book-06" width="570">
+				<img src="~/assets_user/img/book-1.png" alt="product-book-06" width="570">
 			</div>
 		</div>
 
@@ -14,11 +14,11 @@
 			<div class="woo_inner">
 				<div class="shop_status sell">جدید</div>
 				<h2 class="woo_product_title">
-					<a href="#">پودر گینر</a>
+					<a href="#">@Model.Name</a>
 				</h2>
 				<ul class="woo_info">
-					<li><strong>دسته بندی: </strong>افزایش وزن</li>
-					<li><strong>شماره: </strong>#CDP0147</li>
+					<li><strong>دسته بندی: </strong>@Model.Category</li>
+					<li><strong>شماره: </strong>@Model.Number</li>
 				</ul>
 				<div class="woo_price_rate">
 					<div class="woo_rating">
@@ -29,13 +29,13 @@
 						<i class="fas fa-star"></i>
 					</div>
 					<div class="woo_price_fix">
-						<h3 class="mb-0 theme-cl">1,490,000 تومان</h3>
+						<h3 class="mb-0 theme-cl">@Model.Price</h3>
 					</div>
 				</div>
 				<div class="woo_short_desc">
-					<li><label>وزن:2 کیلوگرم</label></li>
-					<li><label>برند: نایک</label></li>
-					<li><label>طعم:شکلاتی</label></li>
+					<li><label>وزن:@Model.weight</label></li>
+					<li><label>برند:@Model.Brand</label></li>
+					<li><label>طعم:@Model.Test</label></li>
 
 					<p>برای بسیاری از معلمان دانشجو، چشم انداز مواجهه با اولین تجربه کلاسی خود بسیار زیاد است. این کتاب دیدگاهی واقع گرایانه از آنچه در کلاس با آن ها روبرو خواهد شد ارائه می دهد، اما همچنین مهارت هایی را که برای تبدیل شدن به معلمان حرفه ای و متفکر به آن ها نیاز دارند، ارائه می دهد.</p>
 				</div>
@@ -114,7 +114,7 @@
 			<!-- reviews-comments-item -->
 			<div class="reviews-comments-item">
 				<div class="review-comments-avatar">
-					<img src="assets_user/img/user-1.jpg" class="img-fluid" alt="">
+					<img src="~/assets_user/img/user-1.jpg" class="img-fluid" alt="">
 				</div>
 				<div class="reviews-comments-item-text">
 					<h4><a href="#">محمد خاکپور</a><span class="reviews-comments-item-date"><i class="ti-calendar theme-cl"></i>10 بهمن 1399</span></h4>
@@ -133,7 +133,7 @@
 			<!-- reviews-comments-item -->
 			<div class="reviews-comments-item">
 				<div class="review-comments-avatar">
-					<img src="assets_user/img/user-2.jpg" class="img-fluid" alt="">
+					<img src="~/assets_user/img/user-2.jpg" class="img-fluid" alt="">
 				</div>
 				<div class="reviews-comments-item-text">
 					<h4><a href="#">الهام پاکزاد</a><span class="reviews-comments-item-date"><i class="ti-calendar theme-cl"></i>26 مرداد 1399</span></h4>
@@ -152,7 +152,7 @@
 			<!-- reviews-comments-item -->
 			<div class="reviews-comments-item">
 				<div class="review-comments-avatar">
-					<img src="assets_user/img/user-3.jpg" class="img-fluid" alt="">
+					<img src="~/assets_user/img/user-3.jpg" class="img-fluid" alt="">
 				</div>
 				<div class="reviews-comments-item-text">
 					<h4><a href="#">مهدی فدایی</a><span class="reviews-comments-item-date"><i class="ti-calendar theme-cl"></i>20 بهمن 1398</span></h4>
