@@ -50,14 +50,15 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
-//auto mapper configuration
-var mapperConfig = new MepperConfiguration(mc =>
+var mapperConfig = new MapperConfiguration(mc =>
 {
     mc.AddProfile(new MapperProfile());
-
 });
+
 IMapper mapper = mapperConfig.CreateMapper();
-builder.Services.AddSignleton(mapper);
+builder.Services.AddSingleton(mapper);
+
+
 
 
 
@@ -75,13 +76,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
-var mapperConfig = new MapperConfiguration(mc =>
-{
-    mc.AddProfile(new MapperProfile());
-});
 
-IMapper mapper = mapperConfig.CreateMapper();
-builder.Services.AddSingleton(mapper);
 
 
 app.UseHttpsRedirection();

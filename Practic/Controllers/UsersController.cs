@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,13 +15,15 @@ namespace Users.Controllers
         private readonly UserManager<Entities.User> userManager;
         private readonly RoleManager<Role> roleManager;
         private readonly SignInManager<Entities.User> signInManager;
+        private readonly IMapper mapper;
 
-        public UsersController(ApplicationDbContext dbContex, UserManager<Entities.User> userManager, RoleManager<Role> roleManager, SignInManager<Entities.User> signInManager)
+        public UsersController(ApplicationDbContext dbContex, UserManager<Entities.User> userManager, RoleManager<Role> roleManager, SignInManager<Entities.User> signInManager, IMapper mapper)
         {
             this.dbContex = dbContex;
             this.userManager = userManager;
             this.roleManager = roleManager;
             this.signInManager = signInManager;
+            this.mapper = mapper;
         }
         public IActionResult AddUser()
         {
@@ -35,31 +38,22 @@ namespace Users.Controllers
             {
                 return View(nameof(eror2));
             }
-            var User = new Entities.User()
-            {
-                Id = Dto.Id,
-                Name = Dto.Name,
-                Email = Dto.Email,
-                NationalCode = Dto.NationalCode,
-                PhoneNumber = Dto.PhoneNumber,
-                UserName = Dto.Username,
-
-            };
+            var User = mapper.Map<User>(Dto);
             var status = await userManager.CreateAsync(User, Dto.Password);
             if (status.Succeeded)
             {
-                var FindRole = await roleManager.FindByNameAsync("Username");
-                if (FindRole != null)
+                var FindRole = await roleManager.FindByNameAsync("User");
+                if (FindRole == null)
                 {
                     var Role = new Role()
                     {
-                        Name = "Username",
+                        Name = "User",
                         Description = "this is a normal user"
                     };
                     await roleManager.CreateAsync(Role);
                 }
             }
-            await userManager.AddToRoleAsync(User, "Username");
+            await userManager.AddToRoleAsync(User, "User");
 
 
             return View();
@@ -69,14 +63,14 @@ namespace Users.Controllers
             return View();
         }
         [HttpPost]
-        public async Task<IActionResult> Login(UsersDto dto , string password)
+        public async Task<IActionResult> Login(UsersDto dto, string password)
         {
             var User = await userManager.FindByNameAsync(dto.Username);
 
             if (User != null)
 
             {
-                var Status = await signInManager.PasswordSignInAsync(User, password , true, true);
+                var Status = await signInManager.PasswordSignInAsync(User, password, true, true);
                 if (Status.Succeeded)
                 {
                     return RedirectToAction("index", "home");
@@ -170,15 +164,7 @@ namespace Users.Controllers
             var user = dbContex.Users.Where(x => x.Id == UserId).FirstOrDefault();
             if (user != null)
             {
-                var model = new UsersDto()
-                {
-                    Id = user.Id,
-                    Email = user.Email,
-                    Name = user.Name,
-                    NationalCode = user.NationalCode,
-                    PhoneNumber = user.PhoneNumber,
-                    Username = user.UserName,
-                };
+                var model = mapper.Map<UsersDto>(user);
                 TempData["UserId"] = UserId;
                 return View(model);
             }
@@ -210,20 +196,7 @@ namespace Users.Controllers
         public IActionResult ListUser()
         {
             var user = dbContex.Users.ToList();
-            var model = new List<UsersDto>();
-            foreach (var item in user)
-            {
-                var ListUser = new UsersDto()
-                {
-                    Id = item.Id,
-                    Name = item.Name,
-                    NationalCode = item.NationalCode,
-                    PhoneNumber = item.PhoneNumber,
-                    Email = item.Email,
-                    Username = item.UserName,
-                };
-                model.Add(ListUser);
-            };
+            var model = mapper.Map<UsersDto>(user);
             return View(model);
         }
     }
