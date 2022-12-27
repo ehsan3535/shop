@@ -11,11 +11,11 @@ namespace Users.Controllers
     public class UsersController : Controller
     {
         private readonly ApplicationDbContext dbContex;
-        private readonly UserManager<User> userManager;
+        private readonly UserManager<Entities.User> userManager;
         private readonly RoleManager<Role> roleManager;
-        private readonly SignInManager<User> signInManager;
+        private readonly SignInManager<Entities.User> signInManager;
 
-        public UsersController(ApplicationDbContext dbContex, UserManager<User> userManager, RoleManager<Role> roleManager, SignInManager<User> signInManager)
+        public UsersController(ApplicationDbContext dbContex, UserManager<Entities.User> userManager, RoleManager<Role> roleManager, SignInManager<Entities.User> signInManager)
         {
             this.dbContex = dbContex;
             this.userManager = userManager;
@@ -35,7 +35,7 @@ namespace Users.Controllers
             {
                 return View(nameof(eror2));
             }
-            var User = new User()
+            var User = new Entities.User()
             {
                 Id = Dto.Id,
                 Name = Dto.Name,

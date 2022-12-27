@@ -9,6 +9,6 @@ namespace Shop.Models.Products
         public Guid ProductId { get; set; }
         public ProductDto Product { get; set; }
         public Guid UserId { get; set; }
-        public User Users { get; set; }
+        public Users.Entities.User Users { get; set; }
     }
 }
