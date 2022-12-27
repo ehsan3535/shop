@@ -50,8 +50,14 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.SlidingExpiration = true;
 });
 
+//auto mapper configuration
+var mapperConfig = new MepperConfiguration(mc =>
+{
+    mc.AddProfile(new MapperProfile());
 
-
+});
+IMapper mapper = mapperConfig.CreateMapper();
+builder.Services.AddSignleton(mapper);
 
 
 
