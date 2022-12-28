@@ -7,7 +7,7 @@ namespace Shop.Models.Order
         public Guid Id { get; set; }
         public string Price { get; set; }
         public int Count { get; set; }
-        public Product Product { get; set; }
+        public Products Products { get; set; }
         public Guid ProductId { get; set; }
         public OrdersDto Orders { get; set; }
         public Guid OrdersId { get; set; }

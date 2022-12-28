@@ -44,7 +44,7 @@ namespace Shop.Controllers
                         Id = item.Id,
                         OrderStatuses = item.OrderStatuses,
                         TotalPrice = item.TotalPrice,
-                        Product = item.Product,
+                        ProductId = item.ProductId,
                         User = item.User,
                     };
                     model.Add(orderdto);

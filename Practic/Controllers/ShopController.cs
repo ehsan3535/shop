@@ -1,16 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Shop.Models.Products;
 using Shop.Entities.Product;
 using Microsoft.Win32.SafeHandles;
+using AutoMapper;
+using Shop.Models.ProductsDto;
+using Shop.NewFolder;
+using Shop.Images;
+using Shop.Models;
 
 namespace Shop.Controllers
 {
     public class ShopController : Controller
     {
         private readonly ApplicationDbContext dbContext;
-        public ShopController(ApplicationDbContext dbContext)
+        private readonly IMapper mapper;
+        public ShopController(ApplicationDbContext dbContext, IMapper mapper)
         {
             this.dbContext = dbContext;
+            this.mapper = mapper;
         }
         public IActionResult AddProduct()
         {
@@ -19,24 +25,23 @@ namespace Shop.Controllers
         [HttpPost]
         public IActionResult AddProduct(ProductDto dto)
         {
-            var Product = new Product()
-            {
-                Number=dto.Number,
-                Name = dto.Name,
-                Detail = dto.Detail,
-                Brand = dto.Brand,
-                Category = dto.Category,
-                Price = dto.Price,
-                Test = dto.Test,
-                mojod= dto.mojod,
-                weight = dto.weight,
-            };
-            dbContext.Add(Product);
+            var product = mapper.Map<Products>(dto);
+            dbContext.Add(product);
             dbContext.SaveChanges();
 
+            foreach (var item in dto.ProductImages)
+            {
+                var picture = new ProductImages()
+                {
+                    ImageLink = UploadImages.SaveFile(item, "ProductImages"),
+                    ProductId = product.Id
+                };
+                dbContext.Add(picture);
+            }
 
             return RedirectToAction(nameof(ProductList));
         }
+       
         public IActionResult ProductList()
         {
             var products = dbContext.Products.ToList();

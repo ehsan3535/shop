@@ -1,7 +1,7 @@
 ﻿@{
     Layout = "_AdminLayout";
 }
-@using Shop.Models.Products
+@using Shop.Models.ProductsDto
 @model ProductDto
 <form method="post" asp-action="AddProduct" asp-controller="Shop">
 
@@ -97,9 +97,9 @@
                                 <input type="file" class="form-control">
                                 <label>آپلود فایل</label>
                                 <div class="input-group round">
-                                    <input type="text" class="form-control file-input" placeholder="برای آپلود کلیک کنید">
+                                <input type="text" class="form-control file-input" asp-for="ProductImages" placeholder="برای آپلود کلیک کنید">
                                     <span class="input-group-btn">
-                                        <button type="button" class="btn btn-info">
+                                        <button type="button" asp-for="File" class="btn btn-info">
                                             <i class="icon-picture"></i>
                                             آپلود عکس
                                         </button>

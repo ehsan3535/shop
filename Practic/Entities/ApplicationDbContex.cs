@@ -15,7 +15,7 @@ public class ApplicationDbContext : IdentityDbContext<Users.Entities.User, Role,
     {
     }
 
-    public DbSet<Product> Products { get; set; }
+    public DbSet<Products> Products { get; set; }
     public DbSet<ProductComment> ProductComments { get; set; }
     public DbSet<ProductImages> ProductImages { get; }
     public DbSet<Orders> Orders { get; set; }

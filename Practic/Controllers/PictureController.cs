@@ -19,7 +19,7 @@ namespace Shop.Controllers
         public IActionResult AddNewData(TestDto dto)
         {
             var TestEntity = mapper.Map<Test>(dto);
-            TestEntity.Url = UploadImages.SaveFile(dto.File,"test");
+            TestEntity.ImageLink = UploadImages.SaveFile(dto.File,"test");
             context.Add(TestEntity);
             context.SaveChanges();
             return View();

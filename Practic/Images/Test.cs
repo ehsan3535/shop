@@ -3,6 +3,6 @@
     public class Test
     {
         public Guid Id { get; set; }
-        public string Url { get; set; }
+        public string ImageLink { get; set; }
     }
 }
