@@ -1,5 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
+using Shop.Images;
+using Shop.Models;
+using Shop.NewFolder;
 
 namespace Shop.Controllers
 {
@@ -12,10 +15,20 @@ namespace Shop.Controllers
             this.context = context;
             this.mapper = mapper;
         }
-        public IActionResult AddNewData()
+        [HttpPost]
+        public IActionResult AddNewData(TestDto dto)
         {
-
+            var TestEntity = mapper.Map<Test>(dto);
+            TestEntity.Url = UploadImages.SaveFile(dto.File,"test");
+            context.Add(TestEntity);
+            context.SaveChanges();
             return View();
+        }
+        public IActionResult DataList()
+        {
+            var TestEntity = context.Tests.ToList();
+            var model = mapper.Map<TestDto>(TestEntity);
+            return View(model);
         }
         public IActionResult Index()
         {

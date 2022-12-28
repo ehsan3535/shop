@@ -1,6 +1,9 @@
 using AutoMapper;
+using AutoMapper.M;
+using AutoMapper.MapperProfile;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Users.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -50,13 +53,12 @@ builder.Services.ConfigureApplicationCookie(options =>
 });
 
 //auto mapper configuration
-var mapperConfig = new MepperConfiguration(mc =>
+var mapperConfig = new MapperConfiguration(mc =>
 {
     mc.AddProfile(new MapperProfile());
-
 });
 IMapper mapper = mapperConfig.CreateMapper();
-builder.Services.AddSignleton(mapper);
+builder.Services.AddSingleton(mapper);
 
 
 
