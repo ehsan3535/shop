@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diamod\\Desktop\\Clone\\shop\\Practic\\Shop.csproj": {}
+    "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\Shop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diamod\\Desktop\\Clone\\shop\\Practic\\Shop.csproj": {
+    "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\Shop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diamod\\Desktop\\Clone\\shop\\Practic\\Shop.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\Shop.csproj",
         "projectName": "Shop",
-        "projectPath": "C:\\Users\\Diamod\\Desktop\\Clone\\shop\\Practic\\Shop.csproj",
-        "packagesPath": "C:\\Users\\Diamod\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diamod\\Desktop\\Clone\\shop\\Practic\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\Shop.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\Mr.Haghjoo\\Practic\\shop\\Practic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Diamod\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,7 +83,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -95,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

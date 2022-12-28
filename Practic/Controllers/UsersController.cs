@@ -196,7 +196,7 @@ namespace Users.Controllers
         public IActionResult ListUser()
         {
             var user = dbContex.Users.ToList();
-            var model = mapper.Map<UsersDto>(user);
+            var model = mapper.Map<List<UsersDto>>(user);
             return View(model);
         }
     }
