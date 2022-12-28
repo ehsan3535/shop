@@ -6,9 +6,9 @@ using Users.Entities;
 public class Orders
 {
     public Guid Id { get; set; }
-    public User User { get; set; }
+    public Users.Entities.User User { get; set; }
     public Product Product { get; set; }
-    public Guid ProductId { get; set; }
+    //public Guid ProductId { get; set; }
     public Guid UserId { get; set; }
     public OrderStatuses OrderStatuses { get; set; }
     public int TotalPrice { get; set; }

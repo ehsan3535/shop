@@ -1,0 +1,24 @@
+﻿@using Shop.Models
+@model UsersDto
+<form method="post" asp-action="AddUser">
+    <h1> Name: </h1>
+    <input asp-action="adduser" asp-for=Name />
+    <h1> NationalCode: </h1>
+    <input asp-for=NationalCode />
+    <h1> PhoneNumber: </h1>
+    <input asp-for=PhoneNumber />
+    <h1> Email: </h1>
+    <input asp-for=Email />
+    <h1> Username: </h1>
+    <input asp-for=Username />
+    <h1> Password: </h1>
+    <input asp-for=Password />
+    <h1> PasswordConfirm: </h1>
+    <input asp-for=PasswordConfirm />
+
+
+    <button type="submit">Submit</button>
+
+
+</form>
+

@@ -7,7 +7,7 @@ using Shop.Images;
 using Users.Entities;
 
 
-public class ApplicationDbContext : IdentityDbContext<User, Role, Guid>
+public class ApplicationDbContext : IdentityDbContext<Users.Entities.User, Role, Guid>
 {
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)

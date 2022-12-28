@@ -137,6 +137,9 @@ namespace Shop.Migrations
                     b.Property<int>("OrderStatuses")
                         .HasColumnType("int");
 
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<int>("TotalPrice")
                         .HasColumnType("int");
 
@@ -144,6 +147,8 @@ namespace Shop.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
 
                     b.HasIndex("UserId");
 
@@ -490,11 +495,19 @@ namespace Shop.Migrations
 
             modelBuilder.Entity("Orders", b =>
                 {
+                    b.HasOne("Shop.Entities.Product.Product", "Product")
+                        .WithMany()
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("Users.Entities.User", "User")
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Product");
 
                     b.Navigation("User");
                 });
