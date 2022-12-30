@@ -6,6 +6,7 @@ using Shop.Models.ProductsDto;
 using Shop.NewFolder;
 using Shop.Images;
 using Shop.Models;
+using System.Collections.Generic;
 
 namespace Shop.Controllers
 {
@@ -41,38 +42,16 @@ namespace Shop.Controllers
 
             return RedirectToAction(nameof(ProductList));
         }
-       
+
         public IActionResult ProductList()
         {
             var products = dbContext.Products.ToList();
-
-            var model = new List<ProductDto>();
-
-            if (products.Any())
+            if (Product != null)
             {
-                foreach (var product in products)
-                {
-                    var productdto = new ProductDto()
-                    {
-                        Id = product.Id,
-                        Number = product.Number,
-                        Name = product.Name,
-                        Brand = product.Brand,
-                        Price = product.Price,
-                        Category = product.Category,
-                        Count = product.Count,
-                        Detail = product.Detail,
-                        Test = product.Test,
-                        mojod=product.mojod,
-                        weight = product.weight,
-
-                    };
-                    model.Add(productdto);
-
-                }
+                var model = mapper.Map<List<ProductDto>>(products);
                 return View(model);
             }
-            return View(model);
+            return RedirectToAction(nameof(ProductList));
 
         }
         public IActionResult ProductDetail(Guid ProductId)
@@ -80,43 +59,17 @@ namespace Shop.Controllers
             var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
             {
-                var model = new ProductDto()
-                {
-                    Id = Product.Id,
-                    Number = Product.Number,
-                    Brand = Product.Brand,
-                    Category = Product.Category,
-                    Price = Product.Price,
-                    Name = Product.Name,
-                    Count = Product.Count,
-                    Detail = Product.Detail,
-                    Test = Product.Test,
-                    mojod = Product.mojod,
-                    weight = Product.weight,
-                };
+                var model = mapper.Map<ProductDto>(Product);
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
         }
-       public IActionResult EditProduct(Guid ProductId)
+        public IActionResult EditProduct(Guid ProductId)
         {
             var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
             {
-                var model = new ProductDto()
-                {
-                    Id = Product.Id,
-                    Number = Product.Number,
-                    Brand = Product.Brand,
-                    Category = Product.Category,
-                    Price = Product.Price,
-                    Name = Product.Name,
-                    Count = Product.Count,
-                    Detail = Product.Detail,
-                    Test = Product.Test,
-                    mojod = Product.mojod,
-                    weight = Product.weight,
-                };
+                var model = mapper.Map<ProductDto>(Product);
                 TempData["ProductId"] = ProductId;
                 return View(model);
             }
@@ -162,56 +115,22 @@ namespace Shop.Controllers
         public IActionResult Shop()
         {
             var products = dbContext.Products.ToList();
-
-            var model = new List<ProductDto>();
-
-            if (products.Any())
+            if(products != null) 
             {
-                foreach (var product in products)
-                {
-                    var productdto = new ProductDto()
-                    {
-                        Id = product.Id,
-                        Number = product.Number,
-                        Name = product.Name,
-                        Brand = product.Brand,
-                        Price = product.Price,
-                        Category = product.Category,
-                        Count = product.Count,
-                        Detail = product.Detail,
-                        Test = product.Test,
-                        mojod = product.mojod,
-                        weight = product.weight,
+                var model = mapper.Map<List<ProductDto>>(products);
 
-                    };
-                    model.Add(productdto);
-
-                }
                 return View(model);
             }
-            return View(model);
+            return RedirectToAction();
 
 
         }
         public IActionResult ProductDetail_User(Guid ProductId)
         {
-              var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
+            var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
             {
-                var model = new ProductDto()
-                {
-                    Id = Product.Id,
-                    Number = Product.Number,
-                    Brand = Product.Brand,
-                    Category = Product.Category,
-                    Price = Product.Price,
-                    Name = Product.Name,
-                    Count = Product.Count,
-                    Detail = Product.Detail,
-                    Test = Product.Test,
-                    mojod = Product.mojod,
-                    weight = Product.weight,
-                };
+                var model = mapper.Map<ProductDto>(Product);
                 return View(model);
             }
             return RedirectToAction(nameof(Shop));
