@@ -41,7 +41,7 @@ namespace Shop.Controllers
 
             return RedirectToAction(nameof(ProductList));
         }
-       
+
         public IActionResult ProductList()
         {
             var products = dbContext.Products.ToList();
@@ -52,21 +52,7 @@ namespace Shop.Controllers
             {
                 foreach (var product in products)
                 {
-                    var productdto = new ProductDto()
-                    {
-                        Id = product.Id,
-                        Number = product.Number,
-                        Name = product.Name,
-                        Brand = product.Brand,
-                        Price = product.Price,
-                        Category = product.Category,
-                        Count = product.Count,
-                        Detail = product.Detail,
-                        Test = product.Test,
-                        mojod=product.mojod,
-                        weight = product.weight,
-
-                    };
+                    var productdto = mapper.Map<ProductDto>(product);
                     model.Add(productdto);
 
                 }
@@ -80,25 +66,12 @@ namespace Shop.Controllers
             var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
             {
-                var model = new ProductDto()
-                {
-                    Id = Product.Id,
-                    Number = Product.Number,
-                    Brand = Product.Brand,
-                    Category = Product.Category,
-                    Price = Product.Price,
-                    Name = Product.Name,
-                    Count = Product.Count,
-                    Detail = Product.Detail,
-                    Test = Product.Test,
-                    mojod = Product.mojod,
-                    weight = Product.weight,
-                };
+                var model = mapper.Map<ProductDto>(Product);
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
         }
-       public IActionResult EditProduct(Guid ProductId)
+        public IActionResult EditProduct(Guid ProductId)
         {
             var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
@@ -195,7 +168,7 @@ namespace Shop.Controllers
         }
         public IActionResult ProductDetail_User(Guid ProductId)
         {
-              var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
+            var Product = dbContext.Products.Where(x => x.Id == ProductId).FirstOrDefault();
             if (Product != null)
             {
                 var model = new ProductDto()
