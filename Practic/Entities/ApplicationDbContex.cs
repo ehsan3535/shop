@@ -23,5 +23,6 @@ public class ApplicationDbContext : IdentityDbContext<Users.Entities.User, Role,
     public DbSet<MokamelRequsets> MokamelRequsets { get; set; }
     public DbSet<PlanRequest> PlanRequests { get; set; }
     public DbSet<Test> Tests { get; set; }
+    public DbSet<Category> Categorys { get; set; }
 
 }

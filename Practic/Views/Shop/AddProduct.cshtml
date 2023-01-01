@@ -5,126 +5,126 @@
 @model ProductDto
 <form method="post" asp-action="AddProduct" asp-controller="Shop">
 
-        <div class="col-lg-12">
-            <div class="portlet box border shadow">
-                <div class="portlet-heading">
-                    <div class="portlet-title">
-                        <h3 class="title">
-                            <i class="icon-settings"></i>
-                            افزودن محصول
-                        </h3>
-                    </div><!-- /.portlet-title -->
-                    <div class="buttons-box">
-                        <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
-                            <i class="icon-size-fullscreen"></i>
-                        </a>
-                        <a class="btn btn-sm btn-default btn-round btn-collapse" rel="tooltip" title="کوچک کردن" href="#">
-                            <i class="icon-arrow-up"></i>
-                        </a>
-                    </div><!-- /.buttons-box -->
-                </div><!-- /.portlet-heading -->
-                <div class="portlet-body">
-                    <form role="form">
-                        <div class="form-body">
-                            <div class="form-group round">
-                                <label>شماره محصول</label>
-                                <input type="number" asp-for="Number" class="form-control" placeholder="شماره محصول">
-                            </div><!-- /.form-group -->
-                            <div class="form-group">
-                                <label>نام محصول</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="icon-basket-loaded fa-flip-horizontal"></i>
-                                    </span>
+    <div class="col-lg-12">
+        <div class="portlet box border shadow">
+            <div class="portlet-heading">
+                <div class="portlet-title">
+                    <h3 class="title">
+                        <i class="icon-settings"></i>
+                        افزودن محصول
+                    </h3>
+                </div><!-- /.portlet-title -->
+                <div class="buttons-box">
+                    <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
+                        <i class="icon-size-fullscreen"></i>
+                    </a>
+                    <a class="btn btn-sm btn-default btn-round btn-collapse" rel="tooltip" title="کوچک کردن" href="#">
+                        <i class="icon-arrow-up"></i>
+                    </a>
+                </div><!-- /.buttons-box -->
+            </div><!-- /.portlet-heading -->
+            <div class="portlet-body">
+                <form role="form">
+                    <div class="form-body">
+                        <div class="form-group round">
+                            <label>شماره محصول</label>
+                            <input type="number" asp-for="Number" class="form-control" placeholder="شماره محصول">
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label>نام محصول</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="icon-basket-loaded fa-flip-horizontal"></i>
+                                </span>
                                 <input type="text" asp-for="Name" class="form-control" placeholder="نام">
-                                </div><!-- /.input-group -->
-                            </div><!-- /.form-group -->
-                            <div class="form-group">
-                                <label>وزن</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="fas fa-circle-notch"></i>
-                                    </span>
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label>وزن</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fas fa-circle-notch"></i>
+                                </span>
                                 <input type="text" asp-for="weight" class="form-control">
-                                </div><!-- /.input-group -->
-                            </div><!-- /.form-group -->
-                            <div class="form-group">
-                                <label>طعم</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="fas fa-circle-notch"></i>
-                                    </span>
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label>طعم</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="fas fa-circle-notch"></i>
+                                </span>
                                 <input type="text" asp-for="Test" class="form-control">
-                                </div><!-- /.input-group -->
-                            </div><!-- /.form-group -->
-                            <div class="form-group">
-                                <label>دسته بندی</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="icon-options"></i>
-                                    </span>
-                                    <select asp-for="Category" class="form-select">
-                                    <option value="افزایش وزن">افزایش وزن</option>
-                                    <option value="کاهش وزن">کاهش وزن</option>
-                                    <option value="تناسب اندام">تناسب اندام</option>
-                                    <option value="حجم دهنده عضله">حجم دهنده عضله</option>
-                                    <option value="افزاینده عضله">افزاینده عضله</option>
-                                    </select>
-                                </div><!-- /.input-group -->
-                            </div><!-- /.form-group -->
-                            <div class="form-group">
-                                <label>جزئیات</label>
-                                <div class="input-group">
-                                    <span class="input-group-addon">
-                                        <i class="icon-speech"></i>
-                                    </span>
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label>دسته بندی</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="icon-options"></i>
+                                </span>
+
+                                <select asp-for="CategoryId" class="form-select">
+                                    @foreach (var item in Model.Categories)
+                                    {
+                                        <option value="@item.Id">@item.CategoryName</option>
+                                    }
+                                </select>
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                        <div class="form-group">
+                            <label>جزئیات</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="icon-speech"></i>
+                                </span>
                                 <textarea asp-for="Detail" class="form-control" rows="5" placeholder="جزئیات"></textarea>
-                                </div><!-- /.input-group -->
-                            </div><!-- /.form-group -->
-                            <div class="form-group round">
-                                <label>برند</label>
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                        <div class="form-group round">
+                            <label>برند</label>
                             <input type="text" asp-for="Brand" class="form-control" placeholder="برند">
-                            </div><!-- /.form-group -->
-                            <div class="form-group round">
-                                <label>قیمت</label>
+                        </div><!-- /.form-group -->
+                        <div class="form-group round">
+                            <label>قیمت</label>
                             <input type="text" asp-for="Price" class="form-control" placeholder="قیمت">
-                            </div><!-- /.form-group -->  <div class="form-group round">
-                                <label>وضعیت انبار</label>
+                        </div><!-- /.form-group -->  <div class="form-group round">
+                            <label>وضعیت انبار</label>
                             <input type="text" asp-for="mojod" class="form-control" placeholder="وضعیت انبار">
-                            </div><!-- /.form-group -->
+                        </div><!-- /.form-group -->
 
-                            <div class="form-group relative">
-                                <input type="file" class="form-control">
-                                <label>آپلود فایل</label>
-                                <div class="input-group round">
+                        <div class="form-group relative">
+                            <input type="file" class="form-control">
+                            <label>آپلود فایل</label>
+                            <div class="input-group round">
                                 <input type="text" class="form-control file-input" asp-for="ProductImages" placeholder="برای آپلود کلیک کنید">
-                                    <span class="input-group-btn">
-                                        <button type="button" asp-for="File" class="btn btn-info">
-                                            <i class="icon-picture"></i>
-                                            آپلود عکس
-                                        </button>
-                                    </span>
-                                </div><!-- /.input-group -->
-                                <div class="help-block"></div>
-                            </div><!-- /.form-group -->
-                        </div><!-- /.form-body -->
+                                <span class="input-group-btn">
+                                    <button type="button" asp-for="File" class="btn btn-info">
+                                        <i class="icon-picture"></i>
+                                        آپلود عکس
+                                    </button>
+                                </span>
+                            </div><!-- /.input-group -->
+                            <div class="help-block"></div>
+                        </div><!-- /.form-group -->
+                    </div><!-- /.form-body -->
 
-                        <div class="form-actions">
-                            <button type="submit" class="btn btn-info btn-round">
-                                <i class="icon-check"></i>
-                                ذخیره
-                            </button>
-                            <button type="button" class="btn btn-warning btn-round">
-                                بازگشت
-                                <i class="icon-close"></i>
-                            </button>
-                        </div><!-- /.form-actions -->
-                    </form>
-                </div><!-- /.portlet-body -->
-            </div><!-- /.portlet -->
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-info btn-round">
+                            <i class="icon-check"></i>
+                            ذخیره
+                        </button>
+                        <button type="button" class="btn btn-warning btn-round">
+                            بازگشت
+                            <i class="icon-close"></i>
+                        </button>
+                    </div><!-- /.form-actions -->
+                </form>
+            </div><!-- /.portlet-body -->
+        </div><!-- /.portlet -->
 
 
-        </div><!-- /.col-lg-6 -->
+    </div><!-- /.col-lg-6 -->
 
 </form>
 

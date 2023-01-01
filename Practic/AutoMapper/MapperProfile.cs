@@ -14,6 +14,7 @@ namespace AutoMapper.MapperProfile
             CreateMap<Test, TestDto>().ReverseMap();
             CreateMap<User, UsersDto>().ReverseMap();
             CreateMap<Products, ProductDto>().ReverseMap();
+            CreateMap<Category, CategoryDto>().ReverseMap();
         }
     }
 }

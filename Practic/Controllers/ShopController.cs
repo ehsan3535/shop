@@ -21,12 +21,19 @@ namespace Shop.Controllers
         }
         public IActionResult AddProduct()
         {
-            return View();
+            var model = new ProductDto();
+            var Categories = dbContext.Categorys.ToList();
+
+            model.Categories = mapper.Map<List<CategoryDto>>(Categories);
+
+
+            return View(model);
         }
         [HttpPost]
         public IActionResult AddProduct(ProductDto dto)
         {
             var product = mapper.Map<Products>(dto);
+            product.CategoryId = dto.CategoryId;
             dbContext.Add(product);
             dbContext.SaveChanges();
 
@@ -49,6 +56,13 @@ namespace Shop.Controllers
             if (Product != null)
             {
                 var model = mapper.Map<List<ProductDto>>(products);
+                foreach (var item in model)
+                {
+                    var Category = dbContext.Categorys.Where(x => x.Id == item.Id).FirstOrDefault();
+                }
+
+
+
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
@@ -60,6 +74,7 @@ namespace Shop.Controllers
             if (Product != null)
             {
                 var model = mapper.Map<ProductDto>(Product);
+
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
@@ -70,7 +85,6 @@ namespace Shop.Controllers
             if (Product != null)
             {
                 var model = mapper.Map<ProductDto>(Product);
-                TempData["ProductId"] = ProductId;
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
@@ -78,24 +92,12 @@ namespace Shop.Controllers
         [HttpPost]
         public IActionResult EditProduct(ProductDto dto)
         {
-            //why?(just below sentenc)
-            dto.Id = Guid.Parse(TempData["ProductId"].ToString());
             var Product = dbContext.Products.Where(x => x.Id == dto.Id).FirstOrDefault();
             if (Product != null)
             {
-                Product.Number = dto.Number;
-                Product.Brand = dto.Brand;
-                Product.Category = dto.Category;
-                Product.Price = dto.Price;
-                Product.Name = dto.Name;
-                Product.Count = dto.Count;
-                Product.Detail = dto.Detail;
-                Product.Test = dto.Test;
-                Product.mojod = dto.mojod;
-                Product.weight = dto.weight;
+                Product = mapper.Map<Products>(dto);
 
                 dbContext.Update(Product);
-
                 dbContext.SaveChanges();
             }
             return RedirectToAction(nameof(ProductList));
@@ -115,7 +117,7 @@ namespace Shop.Controllers
         public IActionResult Shop()
         {
             var products = dbContext.Products.ToList();
-            if(products != null) 
+            if (products != null)
             {
                 var model = mapper.Map<List<ProductDto>>(products);
 

@@ -10,12 +10,14 @@ namespace Shop.Entities.Product
         public string weight { get; set; }
         public string Detail { get; set; }
         public string Test { get; set; }
-        public string Category { get; set; }
         public string Brand { get; set; }
         public string Price { get; set; }
         public string mojod { get; set; }
         public int Count { get; set; }
         public string? Rate { get; set; }
+        public Category Category { get; set; }
+        public Guid CategoryId { get; set; }
+
 
         //public Guid SameProduct1Id { get; set; }
         //public Product SameProduct1 { get; set; }

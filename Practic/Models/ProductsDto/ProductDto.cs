@@ -1,4 +1,6 @@
-﻿namespace Shop.Models.ProductsDto
+﻿using Shop.Entities.Product;
+
+namespace Shop.Models.ProductsDto
 {
     public class ProductDto
     {
@@ -8,7 +10,6 @@
         public string weight { get; set; }
         public string Detail { get; set; }
         public string Test { get; set; }
-        public string Category { get; set; }
         public string Brand { get; set; }
         public string Price { get; set; }
         public string mojod { get; set; }
@@ -19,12 +20,15 @@
         public string? Rate { get; set; }
         public List<IFormFile> ProductImages { get; set; }
         public List<ProductCommentDto> ProductComments { get; set; }
+         public List<CategoryDto> Categories { get; set; }
+        public Guid CategoryId { get; set; }
 
 
         public ProductDto()
         {
-            ProductImages= new List<IFormFile>();
-            ProductComments= new List<ProductCommentDto>();
+            ProductImages = new List<IFormFile>();
+            ProductComments = new List<ProductCommentDto>();
+            Categories = new List<CategoryDto>();
         }
 
 

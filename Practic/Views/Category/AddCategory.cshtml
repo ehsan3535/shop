@@ -1,0 +1,59 @@
+﻿@using Shop.Models;
+@{
+    Layout = "_AdminLayout";
+}
+
+@model CategoryDto
+<form method="post" asp-action="AddCategory" asp-controller="Category">
+
+    <div class="col-lg-12">
+        <div class="portlet box border shadow">
+            <div class="portlet-heading">
+                <div class="portlet-title">
+                    <h3 class="title">
+                        <i class="icon-settings"></i>
+                        افزودن محصول
+                    </h3>
+                </div><!-- /.portlet-title -->
+                <div class="buttons-box">
+                    <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
+                        <i class="icon-size-fullscreen"></i>
+                    </a>
+                    <a class="btn btn-sm btn-default btn-round btn-collapse" rel="tooltip" title="کوچک کردن" href="#">
+                        <i class="icon-arrow-up"></i>
+                    </a>
+                </div><!-- /.buttons-box -->
+            </div><!-- /.portlet-heading -->
+            <div class="portlet-body">
+                <form role="form">
+                    <div class="form-body">
+                       
+                        <div class="form-group">
+                            <label>نام دسته بندی</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="icon-basket-loaded fa-flip-horizontal"></i>
+                                </span>
+                                <input type="text" asp-for="CategoryName" class="form-control" placeholder="نام دسته بندی">
+                            </div><!-- /.input-group -->
+                        </div><!-- /.form-group -->
+                       
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-info btn-round">
+                            <i class="icon-check"></i>
+                            ذخیره
+                        </button>
+                        <button type="button" class="btn btn-warning btn-round">
+                            بازگشت
+                            <i class="icon-close"></i>
+                        </button>
+                    </div><!-- /.form-actions -->
+                </form>
+            </div><!-- /.portlet-body -->
+        </div><!-- /.portlet -->
+
+
+    </div><!-- /.col-lg-6 -->
+
+</form>
+
