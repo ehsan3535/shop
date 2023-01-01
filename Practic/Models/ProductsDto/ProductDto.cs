@@ -20,7 +20,7 @@ namespace Shop.Models.ProductsDto
         public string? Rate { get; set; }
         public List<IFormFile> ProductImages { get; set; }
         public List<ProductCommentDto> ProductComments { get; set; }
-         public List<CategoryDto> Categories { get; set; }
+        public List<CategoryDto> Categories { get; set; }
         public Guid CategoryId { get; set; }
 
 
