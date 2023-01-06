@@ -56,13 +56,6 @@ namespace Shop.Controllers
             if (Product != null)
             {
                 var model = mapper.Map<List<ProductDto>>(products);
-                foreach (var item in model)
-                {
-                    var Category = dbContext.Categorys.Where(x => x.Id == item.Id).FirstOrDefault();
-                }
-
-
-
                 return View(model);
             }
             return RedirectToAction(nameof(ProductList));
